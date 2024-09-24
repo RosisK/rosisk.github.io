@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-a:visited {
-    text-decoration: none;
-    color: inherit;
-}
-
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -69,6 +64,11 @@ nav ul li a:hover {
 }
 
 .project a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.project a:visited {
     text-decoration: none;
     color: inherit;
 }
