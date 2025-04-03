@@ -1,55 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title>
+    <title>Rosis Kharel | Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
-        </nav>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">Rosis<span>.</span></a>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="projects.html" class="nav-link active">Projects</a>
+                    <button class="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <section class="projects">
-        <h1>My Projects</h1>
-        <div class="project">
-            <a href="https://rosisk.github.io/To-Do-List/">
-            <h3>Project 1: To-Do List App</h3>
-            <p>A simple and clean to-do list application built using HTML, CSS, and JavaScript. It allows users to add tasks, mark them as completed, and delete them.</p>
-            </a>
-        </div>
-        
-        <div class="project">
-            <a href="https://rosisk.github.io/iPhone-Calculator/">
-                <h3>Project 2: Iphone Calculator</h3>
-                <p>This is a basic calculator web app created using JavaScript that supports arithmetic operations like addition, subtraction, multiplication, and division.</p>
-            </a>
-        </div>
+    <main>
+        <section class="projects-hero hero-section">
+            <div class="container">
+                <h1 class="hero-title">My <span>Projects</span></h1>
+                <p class="hero-subtitle">A collection of my work and experiments with web technologies</p>
+            </div>
+        </section>
 
-        <div class="project">
-            <a href="https://rosisk.github.io/rps-game">
-                <h3>Project 3: Rock Paper Scissors</h3>
-                <p>This is a simple game of Rock Paper Scissors where you can play with the computer that randomly chooses a move. It can keep track of the score and save it to local storage.</p>
-            </a>
+        <section class="projects section">
+            <div class="container">
+                <div class="projects-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="app">Apps</button>
+                    <button class="filter-btn" data-filter="game">Games</button>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card" data-category="web">
+                        <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                            <div class="project-overlay">
+                                <h3>To-Do List App</h3>
+                                <p>A clean to-do list application with task management features.</p>
+                                <a href="https://rosisk.github.io/To-Do-List/" class="project-link">View Project</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>To-Do List App</h3>
+                            <p>HTML, CSS, JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="app">
+                        <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1593508512255-86ab42a8e620?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                            <div class="project-overlay">
+                                <h3>iPhone Calculator</h3>
+                                <p>A functional calculator web app with arithmetic operations.</p>
+                                <a href="https://rosisk.github.io/iPhone-Calculator/" class="project-link">View Project</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>iPhone Calculator</h3>
+                            <p>HTML, CSS, JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="game">
+                        <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1608889825205-eebdb9fc5806?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                            <div class="project-overlay">
+                                <h3>Rock Paper Scissors</h3>
+                                <p>Interactive game with computer opponent and score tracking.</p>
+                                <a href="https://rosisk.github.io/rps-game" class="project-link">View Project</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Rock Paper Scissors</h3>
+                            <p>HTML, CSS, JavaScript</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Rosis Kharel</h3>
+                    <p>Computer Science Student & Web Developer</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html" class="footer-link">Home</a>
+                    <a href="projects.html" class="footer-link">Projects</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Rosis Kharel. All rights reserved.</p>
+            </div>
         </div>
-
-        <div class="project">
-            <a href="">
-                <h3></h3>
-                <p></p>
-            </a>
-        </div>
-
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Rosis Kharel. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
