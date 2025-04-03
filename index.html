@@ -1,34 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <title>Rosis Kharel | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
-        </nav>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">Rosis<span>.</span></a>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="projects.html" class="nav-link">Projects</a>
+                    <button class="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
     </header>
-// Test
-    <section class="intro">
-        <h1>Hello, I'm Rosis Kharel</h1>
-        <p>Welcome to my personal website! I'm a passionate developer with a focus on web development, programming, and more. Below, you'll find some information about me and the work I do.</p>
-    </section>
 
-    <section class="about">
-        <h2>About Me</h2>
-        <p>I'm a computer science student. I have experience in various programming languages including HTML, CSS, JavaScript, and Python.</p>
-        <p>Currently, I'm pursuing my CS degree and working on multiple exciting projects.</p>
-    </section>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="title-word title-word-1">Hello,</span>
+                        <span class="title-word title-word-2">I'm</span>
+                        <span class="title-word title-word-3">Rosis</span>
+                        <span class="title-word title-word-4">Kharel</span>
+                    </h1>
+                    <p class="hero-subtitle">Computer Science Student & Web Developer</p>
+                    <div class="hero-buttons">
+                        <a href="#about" class="btn btn-primary">About Me</a>
+                        <a href="projects.html" class="btn btn-secondary">View Projects</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <div class="glow"></div>
+                        <div class="pattern"></div>
+                        <div class="profile-image"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <span>Scroll Down</span>
+                <div class="arrow"></div>
+            </div>
+        </section>
 
-    <footer>
-        <p>&copy; 2024 Rosis Kharel. All rights reserved.</p>
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="section-title">About <span>Me</span></h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I'm a passionate computer science student with expertise in web development and programming. I love creating interactive and beautiful digital experiences.</p>
+                        <p>Currently pursuing my CS degree while working on exciting projects that challenge my skills and creativity.</p>
+                        <div class="skills">
+                            <h3>My Skills</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">HTML</span>
+                                <span class="skill-tag">CSS</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Web Design</span>
+                                <span class="skill-tag">UI/UX</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-circle" data-percent="90">
+                                <svg>
+                                    <circle class="circle-bg" cx="50" cy="50" r="45"></circle>
+                                    <circle class="circle-fill" cx="50" cy="50" r="45"></circle>
+                                </svg>
+                                <div class="stat-number">90%</div>
+                            </div>
+                            <h4>Web Development</h4>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-circle" data-percent="85">
+                                <svg>
+                                    <circle class="circle-bg" cx="50" cy="50" r="45"></circle>
+                                    <circle class="circle-fill" cx="50" cy="50" r="45"></circle>
+                                </svg>
+                                <div class="stat-number">85%</div>
+                            </div>
+                            <h4>JavaScript</h4>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-circle" data-percent="80">
+                                <svg>
+                                    <circle class="circle-bg" cx="50" cy="50" r="45"></circle>
+                                    <circle class="circle-fill" cx="50" cy="50" r="45"></circle>
+                                </svg>
+                                <div class="stat-number">80%</div>
+                            </div>
+                            <h4>UI Design</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-projects section">
+            <div class="container">
+                <h2 class="section-title">Featured <span>Projects</span></h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                            <div class="project-overlay">
+                                <h3>To-Do List App</h3>
+                                <p>A clean to-do list application with task management features.</p>
+                                <a href="https://rosisk.github.io/To-Do-List/" class="project-link">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1593508512255-86ab42a8e620?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                            <div class="project-overlay">
+                                <h3>iPhone Calculator</h3>
+                                <p>A functional calculator web app with arithmetic operations.</p>
+                                <a href="https://rosisk.github.io/iPhone-Calculator/" class="project-link">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1608889825205-eebdb9fc5806?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                            <div class="project-overlay">
+                                <h3>Rock Paper Scissors</h3>
+                                <p>Interactive game with computer opponent and score tracking.</p>
+                                <a href="https://rosisk.github.io/rps-game" class="project-link">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-footer">
+                    <a href="projects.html" class="btn btn-primary">View All Projects</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Rosis Kharel</h3>
+                    <p>Computer Science Student & Web Developer</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html" class="footer-link">Home</a>
+                    <a href="projects.html" class="footer-link">Projects</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Rosis Kharel. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
